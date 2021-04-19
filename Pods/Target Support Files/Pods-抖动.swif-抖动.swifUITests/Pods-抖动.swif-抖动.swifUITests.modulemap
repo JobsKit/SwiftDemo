@@ -1,0 +1,6 @@
+framework module Pods____swif____swifUITests {
+  umbrella header "Pods-抖动.swif-抖动.swifUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
