@@ -3,9 +3,11 @@
 
 target '抖动.swif' do
 
-	pod 'AFNetworking'
 	pod 'SVProgressHUD'
 	pod 'SnapKit'
+	pod 'Moya'
+    	pod 'Moya/RxSwift'
+    	pod 'Moya/ReactiveSwift'
 
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -20,7 +22,5 @@ target '抖动.swif' do
   target '抖动.swifUITests' do
     # Pods for testing
   end
-
-	
 
 end

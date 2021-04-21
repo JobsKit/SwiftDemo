@@ -9,11 +9,25 @@
 import UIKit
 import Foundation
  
+//第三方
+@_exported import SnapKit // 布局
+@_exported import Moya // 网络请求
+
+let Base_url = "http://172.24.135.53:8011/";
+
 // 屏幕宽度
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width;
 // 屏幕高度
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height;
  
+//适配 350 375 414       568 667 736
+func width(_ width: CGFloat) -> CGFloat {
+    return width*SCREEN_WIDTH / 375
+}
+func heigth(_ height: CGFloat) -> CGFloat {
+    return height*SCREEN_HEIGHT / 667
+}
+
 // 状态栏高度
 let STATUSBAR_HIGH = is_iPhoneXSeries() ? 44 : 20;
  
